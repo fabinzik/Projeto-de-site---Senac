@@ -1,0 +1,181 @@
+<!--Prova design responsivo
+
+
+Utilizar bootstrap para facilitar o trabalho
+conter menu nav "de ponta a ponta"
+
+com no minimo 3 itens ou 3 links.(exemplo: nome, serviços, contato).
+
+
+
+
+Página inicial: Conter explicações, conter um sobre ou descrição sobre a facilidade e ou promoções da empresa (site)
+
+
+rodapé : não obrigatório, se utilizado conter minimamente as informações de endereço e copyright by nome.
+
+
+
+Segunda página: Serviços/produtos.
+pode layout de grade ou lista linear(vertical ou horizontal)
+
+
+
+terceira página : formulario 
+
+campos: email, nome , mensagem.
+
+(minimo dois campos)
+
+apois o clique de enviar (recerber um alert e voltar para uma pagina)
+
+
+Obs: Prioridade Site pronto,
+Segundo passo : Por imagens(Agrádeveis)
+
+Programas para usar em celular (codeanywere)
+fiddle-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	
+	<meta charset="utf-8"/>
+	<title>	Odonto Alves</title>
+	<link rel="stylesheet"  href="odonto.css"/>
+	<link rel="icon"  href="icone-contato.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+</script>
+<script type="text/javascript">
+	function saudacao() {
+			var tnome = cadastro.tnome.value;
+			var tmail = cadastro.tmail.value;
+			var tmsg  = cadastro.tmsg.value;
+
+
+			if(tmsg != "") {
+				alert('Sua mensagem foi enviada, em breve retornaremos um E-mail com todas as informações.');
+				location.href = "index.html";
+
+
+
+				 }
+
+
+
+				 if(tmail != ""){
+				location.href = "index.html";
+
+
+
+				 }
+
+
+				 if(tnome != ""){
+				location.href = "index.html";
+
+
+
+				 }
+
+
+
+			
+
+
+			
+
+			
+
+		}
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+	
+	<title>Contato</title>
+
+	
+	
+		
+	
+</head>
+
+<body>
+
+
+			
+	
+		
+</div>
+<DIV id="interface">
+<header id="cabecalho">
+
+<hgroup>
+<h1>Odonto Alves</h1>
+<h2>“Paz começa com um sorriso.”</h2>
+</hgroup>
+
+<img id="icone" src="icone-contato.png" width="100">
+<nav id="menu">
+	<h1>Menu Principal</h1>
+		<ul type="circle">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="servicos.html">Serviços</a></li>
+	<li><a href="contato.html">Contatos</a></li>
+	
+		</ul>	
+</nav>
+
+ 
+
+
+
+</header>
+
+<form name="cadastro" method="post" id="fcontato" ">
+
+	<p><label for="cnome">Nome:</label>
+		<input type="text" name="tnome" id="cnome" size="20" maxlength="30" placeholder="Digite seu nome " required="Preencha o campo nome" /></p>	
+
+	<p><label for="cmail">E-mail:</label>
+		<input type="E-mail" id="tmail" name="cmail" size="20" maxlength="40"
+		placeholder="Digite seu E-mail" required="Preencha o campo E-mail" /></p>
+
+           
+
+		<P><label for="cmsg">Mensagem:</label>
+			<textarea name="tmsg" id="cmsg" cols="90" rows="10" placeholder="Deixe aqui o tipo de consulta que deseja realizar" required="Preencha o campo mensagem"></textarea></p>
+
+			
+
+			<input onclick="saudacao()" type="submit" value="Enviar"/>
+							<input type="reset" value="Limpar"/>
+
+				</form>
+        <footer id="rodape">
+    <p>Endereço: Rua José de Alvarenga 290 501</p>
+    <p>Centro</p>
+    <p>Duque de Caxias / RJ</p>
+    <p>25020-140</p>
+    <p>Copyright&copy; 2018 - by Fábio alves</p>
+    
+
+
+ 
+</body>
+</html>
+</footer>
